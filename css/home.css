@@ -1,0 +1,550 @@
+/* ------------------------------- GOOGLE FONT ------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+/* ------------------------------- GOOGLE FONT ------------------------------- */
+
+/* ------------------------------- GENERAL RIGHTS ------------------------------- */
+*, *::after, *::before {
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ccc;
+}
+/* ------------------------------- GENERAL RIGHTS ------------------------------- */
+
+/* ------------------------------- TOPBAR ------------------------------- */
+.topbar {
+    background-color: #003b90;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+.topbar-logo img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 1%;
+}
+
+.navbar {
+    margin-left: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.navbar img {
+    margin-right: 1%;
+    margin-top: 4%;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    color: #ccc;
+    margin-right: 10%;
+    margin-top: 5%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+.active {
+    color: #fff!important;
+}
+/* ------------------------------- RESPONSIVE ------------------------------- */
+@media only screen and (max-width: 850px) {
+    .topbar {
+        height: 200px;
+    }
+
+    .topbar-logo {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        margin-left: 5%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .navbar img {
+        display: none;
+    }
+
+    .topbar {
+        margin: 0;
+        position: absolute;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        top: 31.1%;
+    }
+
+    .main {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        top: 277px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .topbar {
+        height: 150px;
+    }
+}
+/* ------------------------------- RESPONSIVE ------------------------------- */
+/* ------------------------------- TOPBAR ------------------------------- */
+
+/* ------------------------------- SIDEBAR ------------------------------- */
+.menu {
+    position: absolute;
+    background-color: #fff;
+    margin: 1%;
+    width: 20%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.menu a {
+    text-align: center;
+    margin: 1%;
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 1%;
+}
+
+.menu a:hover {
+    background-color: #ccc;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/* ------------------------------- SIDEBAR ------------------------------- */
+
+/* ------------------------------- MAIN ------------------------------- */
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 49%;
+    height: auto;
+    margin: 1%;
+    position: relative;
+    left: 20.5%;
+}
+
+.header-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header-main img {
+    width: 50px;
+    height: 50px;
+    margin: 1%;
+}
+
+.img-main {
+    margin: 1%;
+    width: 98%;
+    height: auto;
+}
+
+.text-main {
+    margin: 1%;
+}
+
+.footer-main img {
+    width: 30px;
+    height: 30px;
+}
+
+.like {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: left;
+    margin: 1%;
+    margin-left: 10%;
+}
+
+.comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;
+    margin: 1%;
+    margin-right: 10%;
+}
+
+.comment a, .like a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 49%;
+    height: auto;
+    margin: 1%;
+    position: relative;
+    left: 20.5%;
+}
+
+.header-main2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header-main2 img {
+    width: 50px;
+    height: 50px;
+    margin: 1%;
+}
+
+.img-main2 {
+    margin: 1%;
+    width: 98%;
+    height: auto;
+}
+
+.text-main2 {
+    margin: 1%;
+}
+
+.footer-main2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.like2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: left;
+    margin: 1%;
+    margin-left: 10%;
+}
+
+.comment2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;
+    margin: 1%;
+    margin-right: 10%;
+}
+
+.comment2 a, .like a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 49%;
+    height: auto;
+    margin: 1%;
+    position: relative;
+    left: 20.5%;
+}
+
+.header-main3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header-main3 img {
+    width: 50px;
+    height: 50px;
+    margin: 1%;
+}
+
+.img-main3 {
+    margin: 1%;
+    width: 98%;
+    height: auto;
+}
+
+.text-main3 {
+    margin: 1%;
+}
+
+.footer-main3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.like3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: left;
+    margin: 1%;
+    margin-left: 10%;
+}
+
+.comment3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;
+    margin: 1%;
+    margin-right: 10%;
+}
+
+.comment3 a, .like a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #000;
+}
+/* ------------------------------- MAIN ------------------------------- */
+
+/* ------------------------------- SIDEBAR ------------------------------- */
+.sidebar {
+    margin: 1%;
+    background-color: #fff;
+    width: 27%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    float: right;
+    position: absolute;
+    top: 9.5%;
+    right: 1%;
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+}
+
+.friend-suggestion {
+    margin: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+/* ------------------------------- SIDEBAR ------------------------------- */
+/* ------------------------------- RESPONSIVE MENU, MAIN AND SIDEBAR ------------------------------- */
+@media only screen and (max-width: 850px) {
+    .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 26.5%;
+        left: 0;
+    }
+
+    .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 48%;
+        left: 0;
+        text-align: center;
+    }
+
+    .main2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 145%;
+        left: 0;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .main3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 205%;
+        left: 0;
+        text-align: center;
+    }
+
+    .sidebar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 300%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .menu {
+        top: 22%;
+    }
+
+    .main {
+        top: 40%;
+    }
+
+    .sidebar {
+        top: 142%;
+    }
+}
+/* ------------------------------- RESPONSIVE MENU, MAIN AND SIDEBAR ------------------------------- */
